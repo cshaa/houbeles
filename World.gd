@@ -29,17 +29,17 @@ class HexVec:
 func tile_type_to_coord(t: TileType):
 	match t:
 		TileType.Empty:
-			return Vector2i(0, 1)
+			return Vector2i(12, 4)
 		TileType.Twig:
-			return Vector2i(1, 3)
+			return Vector2i(12, 5)
 		TileType.Rock:
-			return Vector2i(0, 11)
+			return Vector2i(13, 5)
 
 func place_tile(t: TileType, x: int, y: int):
 	$TileMap.set_cell(
 		0,
 		Vector2i(x, y),
-		$TileMap.tile_set.get_source_id(0),
+		$TileMap.tile_set.get_source_id(1),
 		tile_type_to_coord(t)
 	)
 			

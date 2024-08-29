@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv3knthpqtraw"
-path="res://.godot/imported/signal-2024-08-29-193132_002.jpeg-d00b58152bf84785c4c5a6e0e502bc10.ctex"
+uid="uid://cnjd6jj6bbejd"
+path="res://.godot/imported/signal-2024-08-29-205259.png-81dfae5721fa8575239e677a5243e8a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://grafika/signal-2024-08-29-193132_002.jpeg"
-dest_files=["res://.godot/imported/signal-2024-08-29-193132_002.jpeg-d00b58152bf84785c4c5a6e0e502bc10.ctex"]
+source_file="res://grafika/signal-2024-08-29-205259.png"
+dest_files=["res://.godot/imported/signal-2024-08-29-205259.png-81dfae5721fa8575239e677a5243e8a9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b74j6frvbtww4"
-path="res://.godot/imported/signal-2024-08-29-202634_002.png-2419d9037d20aabb2d2a71a468460043.ctex"
+path="res://.godot/imported/signal-2024-08-29-202634_002.png-0e634d7eac285e84bd338ce397828f4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://signal-2024-08-29-202634_002.png"
-dest_files=["res://.godot/imported/signal-2024-08-29-202634_002.png-2419d9037d20aabb2d2a71a468460043.ctex"]
+source_file="res://grafika/signal-2024-08-29-202634_002.png"
+dest_files=["res://.godot/imported/signal-2024-08-29-202634_002.png-0e634d7eac285e84bd338ce397828f4a.ctex"]
 
 [params]
 

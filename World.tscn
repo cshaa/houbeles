@@ -1,90 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bo55ry8r1074g"]
+[gd_scene load_steps=6 format=3 uid="uid://bo55ry8r1074g"]
 
 [ext_resource type="Script" path="res://World.gd" id="1_psj34"]
-[ext_resource type="Texture2D" uid="uid://rykt7efi363a" path="res://HexTilesetv3.png" id="2_eh8fk"]
-[ext_resource type="Texture2D" uid="uid://bv3knthpqtraw" path="res://signal-2024-08-29-193132_002.jpeg" id="3_yga43"]
-[ext_resource type="Texture2D" uid="uid://b74j6frvbtww4" path="res://signal-2024-08-29-202634_002.png" id="4_5sm5e"]
+[ext_resource type="Texture2D" uid="uid://cnjd6jj6bbejd" path="res://grafika/signal-2024-08-29-205259.png" id="2_nalfw"]
+[ext_resource type="Texture2D" uid="uid://bv3knthpqtraw" path="res://grafika/signal-2024-08-29-193132_002.jpeg" id="3_yga43"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6x18g"]
-texture = ExtResource("2_eh8fk")
-texture_region_size = Vector2i(32, 32)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-0:8/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-0:9/0 = 0
-1:9/0 = 0
-2:9/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-2:10/0 = 0
-0:11/0 = 0
-1:11/0 = 0
-2:11/0 = 0
-0:12/0 = 0
-1:12/0 = 0
-2:12/0 = 0
-0:13/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-0:14/0 = 0
-1:14/0 = 0
-2:14/0 = 0
-0:15/0 = 0
-1:15/0 = 0
-2:15/0 = 0
-0:16/0 = 0
-1:16/0 = 0
-2:16/0 = 0
-0:17/0 = 0
-1:17/0 = 0
-2:17/0 = 0
-0:18/0 = 0
-1:18/0 = 0
-2:18/0 = 0
-0:19/0 = 0
-1:19/0 = 0
-2:19/0 = 0
-1:20/0 = 0
-2:20/0 = 0
-0:21/0 = 0
-1:21/0 = 0
-2:21/0 = 0
-0:22/0 = 0
-1:22/0 = 0
-2:22/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_848xe"]
-tile_shape = 3
-tile_offset_axis = 1
-tile_size = Vector2i(32, 32)
-sources/2 = SubResource("TileSetAtlasSource_6x18g")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wl4jr"]
-texture = ExtResource("4_5sm5e")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vsvji"]
+texture = ExtResource("2_nalfw")
 texture_region_size = Vector2i(64, 64)
 12:4/0 = 0
 13:4/0 = 0
@@ -94,42 +15,22 @@ texture_region_size = Vector2i(64, 64)
 17:4/0 = 0
 18:4/0 = 0
 19:4/0 = 0
-11:5/0 = 0
 12:5/0 = 0
 13:5/0 = 0
-14:5/0 = 0
-15:5/0 = 0
-16:5/0 = 0
-17:5/0 = 0
-11:6/0 = 0
 12:6/0 = 0
 13:6/0 = 0
 14:6/0 = 0
 15:6/0 = 0
 16:6/0 = 0
-17:6/0 = 0
-11:7/0 = 0
-12:7/0 = 0
-13:7/0 = 0
-14:7/0 = 0
-15:7/0 = 0
-16:7/0 = 0
-17:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_ecd5j"]
+[sub_resource type="TileSet" id="TileSet_qfdyy"]
 tile_shape = 3
 tile_offset_axis = 1
 tile_size = Vector2i(64, 64)
-sources/0 = SubResource("TileSetAtlasSource_wl4jr")
+sources/1 = SubResource("TileSetAtlasSource_vsvji")
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_psj34")
-
-[node name="TileMap" type="TileMap" parent="."]
-position = Vector2(0, 62)
-tile_set = SubResource("TileSet_848xe")
-format = 2
-layer_1/tile_data = PackedInt32Array()
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(223, 130)
@@ -139,7 +40,8 @@ position = Vector2(3.49997, 0.500001)
 scale = Vector2(2.02031, 1.15781)
 texture = ExtResource("3_yga43")
 
-[node name="TileMap2" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_ecd5j")
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 62)
+tile_set = SubResource("TileSet_qfdyy")
 format = 2
-layer_0/tile_data = PackedInt32Array(65535, 786432, 6, 65536, 851968, 6, 131071, 917504, 6)
+layer_1/tile_data = PackedInt32Array()
