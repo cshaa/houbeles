@@ -6,6 +6,25 @@ enum TileType {
 	Rock
 }
 
+enum Direction {
+	North,
+	NorthEast,
+	SouthEast,
+	South,
+	SouthWest,
+	NorthWest
+}
+
+class HexVec:
+	static func AB(a: int, b: int) -> Vector2i:
+		return Vector2i(b, a + b)
+	
+	static func AC(a: int, c: int) -> Vector2i:
+		return Vector2i(-c, a - c)
+	
+	static func BC(b: int, c: int) -> Vector2i:
+		return Vector2i(b - c, b + c)
+
 
 func tile_type_to_coord(t: TileType):
 	match t:
@@ -32,5 +51,5 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float):
+func _process(_delta: float):
 	pass

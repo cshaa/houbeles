@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bo55ry8r1074g"]
+[gd_scene load_steps=9 format=3 uid="uid://bo55ry8r1074g"]
 
 [ext_resource type="Script" path="res://World.gd" id="1_psj34"]
 [ext_resource type="Texture2D" uid="uid://rykt7efi363a" path="res://HexTilesetv3.png" id="2_eh8fk"]
+[ext_resource type="Texture2D" uid="uid://bv3knthpqtraw" path="res://signal-2024-08-29-193132_002.jpeg" id="3_yga43"]
+[ext_resource type="Texture2D" uid="uid://b74j6frvbtww4" path="res://signal-2024-08-29-202634_002.png" id="4_5sm5e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6x18g"]
 texture = ExtResource("2_eh8fk")
@@ -81,6 +83,45 @@ tile_offset_axis = 1
 tile_size = Vector2i(32, 32)
 sources/2 = SubResource("TileSetAtlasSource_6x18g")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wl4jr"]
+texture = ExtResource("4_5sm5e")
+texture_region_size = Vector2i(64, 64)
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ecd5j"]
+tile_shape = 3
+tile_offset_axis = 1
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_wl4jr")
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_psj34")
 
@@ -92,3 +133,13 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(223, 130)
+
+[node name="Signal-2024-08-29-193132002" type="Sprite2D" parent="Camera2D"]
+position = Vector2(3.49997, 0.500001)
+scale = Vector2(2.02031, 1.15781)
+texture = ExtResource("3_yga43")
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ecd5j")
+format = 2
+layer_0/tile_data = PackedInt32Array(65535, 786432, 6, 65536, 851968, 6, 131071, 917504, 6)
