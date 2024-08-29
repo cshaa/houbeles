@@ -6,6 +6,7 @@ enum TileType {
 	Rock
 }
 
+
 func tile_type_to_coord(t: TileType):
 	match t:
 		TileType.Empty:
